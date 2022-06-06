@@ -3,7 +3,10 @@ extends Area2D
 export var speed = 400 # velocidade de movimentação
 var screen_size
 
+signal hit
+
 func _ready():
+	hide()
 	screen_size = get_viewport_rect().size
 
 func _process(delta):
